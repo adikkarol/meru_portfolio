@@ -1,3 +1,5 @@
+const asset = (path) => `${import.meta.env.BASE_URL}${path}`
+
 /* =========================================================================
    Images live in /public/work/ → reference as "/work/name.jpg"
    image: ""  → shows the editable placeholder frame
@@ -20,7 +22,7 @@ export const site = {
 
   // ---------- contact ----------
   email: "meruyert.shyngys19@gmail.com",
-  resumeUrl: "/Meruyert_Shyngys_CV.pdf",
+  resumeUrl: asset("Meruyert_Shyngys_CV.pdf"),
   socials: [
     { label: "LinkedIn", href: "https://linkedin.com/in/meruyert-shyngys" },
   ],
@@ -53,12 +55,12 @@ export const site = {
       tags: ["Brand rollout", "Social", "Bilingual"],
       blurb:
         "Led the Hong Kong transition to Club Med's new brand identity: key visuals, posters, Facebook content and CMS website updates, plus a bilingual data-catching initiative. Added 2,000 new followers inside a 2.4M community.",
-      image: "/work/clubmed-sunthing.jpg",
+      image: asset("work/clubmed-sunthing.jpg"),
       alt: "Club Med Sun-thing exciting campaign key visual",
       ratio: "1 / 1",
       gallery: [
-        { src: "/work/clubmed-sunny-side-up-en.jpg", alt: "Sunny Side Up story, English" },
-        { src: "/work/clubmed-sunny-side-up-tc.jpg", alt: "Sunny Side Up story, Traditional Chinese" },
+        { src: asset("work/clubmed-sunny-side-up-en.jpg"), alt: "Sunny Side Up story, English" },
+        { src: asset("work/clubmed-sunny-side-up-tc.jpg"), alt: "Sunny Side Up story, Traditional Chinese" },
       ],
     },
     {
@@ -69,14 +71,14 @@ export const site = {
       tags: ["Campaign", "Performance", "CMS"],
       blurb:
         "Concept, key visuals, CMS landing pages and paid assets for the two biggest commercial peaks of the season. Together they generated HK$1.2M in revenue.",
-      image: "/work/clubmed-flash-sale-en.jpg",
+      image: asset("work/clubmed-flash-sale-en.jpg"),
       alt: "Club Med Flash Sale key visual",
       ratio: "1 / 1",
       offset: true,
       gallery: [
-        { src: "/work/clubmed-flash-sale-tc.jpg", alt: "Flash Sale key visual, Traditional Chinese" },
-        { src: "/work/clubmed-black-friday-teaser.jpg", alt: "Black Friday teaser, stay tuned" },
-        { src: "/work/clubmed-black-friday-sales.jpg", alt: "Black Friday winter sales, up to 40% off" },
+        { src: asset("work/clubmed-flash-sale-tc.jpg"), alt: "Flash Sale key visual, Traditional Chinese" },
+        { src: asset("work/clubmed-black-friday-teaser.jpg"), alt: "Black Friday teaser, stay tuned" },
+        { src: asset("work/clubmed-black-friday-sales.jpg"), alt: "Black Friday winter sales, up to 40% off" },
       ],
     },
     {
@@ -87,14 +89,14 @@ export const site = {
       tags: ["Art direction", "Copywriting", "EN / 繁中"],
       blurb:
         "Five-plus seasonal campaigns — Sea You Soon, Snow Excited, Spring Ski-son, Sunny Side Up, Yama Go — each written and laid out for English and Traditional Chinese, plus 30+ travel-agency flyers and banners rebuilt to the new identity.",
-      image: "/work/clubmed-sea-you-soon.jpg",
+      image: asset("work/clubmed-sea-you-soon.jpg"),
       alt: "Club Med Sea You Soon campaign key visual",
       ratio: "1 / 1",
       gallery: [
-        { src: "/work/clubmed-snow-excited.jpg", alt: "Snow Excited, book early for Winter 23-24" },
-        { src: "/work/clubmed-yama-go.jpg", alt: "3, 2, 1 Yama Go Hokkaido summer campaign" },
-        { src: "/work/clubmed-skison-japan-en.jpg", alt: "Spring Ski-son Japan offer, English" },
-        { src: "/work/clubmed-sea-you-soon-lastminute.jpg", alt: "Sea you soon last-minute summer deals" },
+        { src: asset("work/clubmed-snow-excited.jpg"), alt: "Snow Excited, book early for Winter 23-24" },
+        { src: asset("work/clubmed-yama-go.jpg"), alt: "3, 2, 1 Yama Go Hokkaido summer campaign" },
+        { src: asset("work/clubmed-skison-japan-en.jpg"), alt: "Spring Ski-son Japan offer, English" },
+        { src: asset("work/clubmed-sea-you-soon-lastminute.jpg"), alt: "Sea you soon last-minute summer deals" },
       ],
     },
     {
@@ -105,13 +107,13 @@ export const site = {
       tags: ["Email", "HTML", "SEO"],
       blurb:
         "10+ EDMs for loyal customers, built in Dartagnan and hand-coded HTML — layout, copy, image selection, resolution QA and delivery via FileZilla. Paired with SEO-optimised site content to lift organic traffic.",
-      image: "work/cb_edm_1.png",
+      image: asset("work/cb_edm_1.png"),
       alt: "Club Med EDM layouts",
       ratio: "1 / 1",
       offset: true,
       gallery: [
-        { src: "/work/cb_edm_2.png", alt: "Club Med EDM layouts 2" },
-        { src: "/work/cb_edm_3.png", alt: "Club Med EDM layouts 3" },
+        { src: asset("work/cb_edm_2.png"), alt: "Club Med EDM layouts 2" },
+        { src: asset("work/cb_edm_3.png"), alt: "Club Med EDM layouts 3" },
       ],
     },
     // {
@@ -135,12 +137,12 @@ export const site = {
       tags: ["Campaign", "Poster design", "Education"],
       blurb:
         "Recruitment campaign for junior French summer programmes: a hero poster plus course-detail sets for Complete Beginner and DELF Junior preparation, structured around an early-bird deadline and two campus locations.",
-      image: "/work/af-summer-camps.png",
+      image: asset("work/af-summer-camps.png"),
       alt: "Alliance Française Explore summer camps poster",
       ratio: "1 / 1",
       gallery: [
-        { src: "/work/af-complete-beginner.png", alt: "Complete Beginner course schedule poster" },
-        { src: "/work/af-delf-junior.png", alt: "DELF Junior Preparation schedule poster" },
+        { src: asset("work/af-complete-beginner.png"), alt: "Complete Beginner course schedule poster" },
+        { src: asset("work/af-delf-junior.png"), alt: "DELF Junior Preparation schedule poster" },
       ],
     },
     // {
@@ -164,14 +166,14 @@ export const site = {
       tags: ["Content marketing", "Social launch", "AI video"],
       blurb:
         "Took a Hong Kong upcycled-beer brand onto Red Note from zero: channel positioning, visuals, slogans and an AI-generated promotional video — coursework strategy applied to a live client case.",
-      image: "/work/beer_1.png",
+      image: asset("work/beer_1.png"),
       alt: "Breer Red Note launch content",
       ratio: "16 / 10",
       // full: true,
       gallery: [
-        { src: "/work/beer_2.png", alt: "Breer Red Note launch content 2" },
-        { src: "/work/beer_3.png", alt: "Breer Red Note launch content 3" },
-        { src: "/work/beer_4.png", alt: "Breer Red Note launch content 4" },
+        { src: asset("work/beer_2.png"), alt: "Breer Red Note launch content 2" },
+        { src: asset("work/beer_3.png"), alt: "Breer Red Note launch content 3" },
+        { src: asset("work/beer_4.png"), alt: "Breer Red Note launch content 4" },
       ],
     },
   ],
@@ -207,7 +209,7 @@ export const site = {
 
   // ---------- about ----------
   about: {
-    portrait: "/cv_photo_meru.jpeg",
+    portrait: asset("cv_photo_meru.jpeg"),
     portraitAlt: "Portrait of Meruyert Shyngys",
     paragraphs: [
       "I work where brand and performance meet. At Club Med I helped move the Hong Kong market onto a new brand identity, then ran the campaigns that had to pay for the move — close enough to the media plan to know what was working, close enough to the creative to make it worth looking at.",
