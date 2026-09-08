@@ -17,7 +17,7 @@ export default function Header() {
           ))}
         </nav>
 
-        <a className="header__cta" href={`mailto:${site.email}`}>
+        <a className="header__cta" href="#contact">
           Let’s talk <span aria-hidden="true">↗</span>
         </a>
 
